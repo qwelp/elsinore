@@ -1,0 +1,51 @@
+.navbar {
+	position: relative;
+	min-height: inherit;
+	margin-bottom: 0;
+	border: 1px solid transparent;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: 0;
+}
+
+.navbar-collapse {
+
+}
+
+
+.navbar-nav>li>a {
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 20px;
+}
+
+.nav > li > a {
+	padding: 8px 0;
+}
+
+.navbar-default .icon-bar {
+	background-color: #000;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: #000;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: transparent;
+}
+
+.navbar-toggle {
+	margin-top: 22px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color: transparent;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	/* background-color: #eee; */
+	border: 0;
+}
