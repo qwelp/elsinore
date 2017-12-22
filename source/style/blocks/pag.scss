@@ -1,0 +1,41 @@
+.pag {
+	margin-bottom: 90px;
+	display: inline-block;
+}
+
+.pag__items {
+	margin-left: -15px;
+}
+
+.pag__item {
+	float: left;
+	margin-left: 15px;
+	display: inline-block;
+	color: #000000;
+	font-size: 16px;
+	padding: 3px 9px;
+
+	&.active {
+		background: #000000;
+		color: #ffffff;
+	}
+}
+
+
+.pag__item-first .icon-nav-arrow {
+
+	transform: rotate(0deg);
+	&:hover {
+		background-position: -82px 0;
+		transform: rotate(180deg);
+	}
+}
+
+.pag__item-last .icon-nav-arrow {
+
+	transform: rotate(180deg);
+	&:hover {
+		background-position: -82px 0;
+		transform: rotate(0deg);
+	}
+}

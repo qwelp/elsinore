@@ -1,0 +1,12 @@
+.callbackForm {
+
+	max-width: 500px;
+
+	& .commonForm {
+		width: 100%;
+	}
+
+	& .commonForm__submit {
+		margin-top: -10px;
+	}
+}

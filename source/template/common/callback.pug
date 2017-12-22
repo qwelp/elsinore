@@ -1,0 +1,33 @@
+.modal.fade#callback(tabindex='-1', role='dialog')
+	.modal-dialog(role='document').callbackForm
+		.modal-content
+			.commonForm
+				form.commonForm__form(action="")
+					.commonForm__title Получить консультацию
+					.commonForm__row
+						.commonForm__input
+							input.commonForm__input-text(name="" type="text" placeholder="Имя")
+					.commonForm__row
+						.commonForm__input
+							input.commonForm__input-text(name="" type="text" placeholder="Телефон")
+					.commonForm__row
+						.commonForm__input
+							input.commonForm__input-text(name="" type="text" placeholder="E-mail")
+					.commonForm__row
+						.commonForm__input
+							input.commonForm__input-text(name="" type="text" placeholder="Город")
+					.commonForm__row
+						.commonForm__policy
+							label.commonForm__label
+								.commonForm__tb
+									.commonForm__col
+										input.commonForm__input-checkbox(type='checkbox', name='')
+										span.commonForm__input-checkbox-custom
+									.commonForm__col
+										span.commonForm__input-label
+											| Я согласен на
+											|
+											a.commonForm__policy-link(href="#") обработку персональных данных
+					.commonForm__row
+						button.commonForm__submit(type='button') Отправить
+						//button.commonForm__submit(type='button', data-dismiss='modal')

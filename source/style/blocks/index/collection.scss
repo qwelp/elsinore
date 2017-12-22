@@ -1,0 +1,259 @@
+.indexCollection {
+	margin-bottom: 70px;
+	position: relative;
+}
+
+.indexCollection2 {
+	background: #f1f1f1;
+	padding: 80px 0;
+}
+
+.indexCollection__nav, .indexCollection2__nav, .indexCollection3__nav, .indexNews__nav {
+	top: 0;
+	left: 25px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-left: -25px;
+	margin-right: -25px;
+}
+
+
+.indexCollection__seciton, .indexNews__seciton {
+	font-family: 'old_standard_ttbold';
+	font-size: 40px;
+	color: #000000;
+}
+
+.indexCollection__items, .indexCollection2__items, .indexCollection3__items {
+	position: relative;
+}
+
+.indexCollection__detail {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .8);
+	transition: opacity .3s;
+}
+
+
+.indexCollection__detail_link {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	line-height: 17px;
+	border-bottom: 1px solid #FFFFFF;
+	color: #ffffff;
+
+	&:hover {
+		color: #ffffff;
+		text-decoration: none;
+	}
+}
+
+
+.indexCollection__item {
+	position: relative;
+
+	&:hover .indexCollection__detail {
+		opacity: 1;
+	}
+}
+
+
+
+.indexCollection__title {
+	position: absolute;
+	bottom: 28px;
+	left: 28px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.indexCollection__img {
+
+}
+
+@media (min-width: 768px) {
+	.indexCollection__nav, .indexCollection2__nav, .indexCollection3__nav, .indexNews__nav {
+		width:750px
+	}
+}
+
+.indexCollection__odd {
+	background: #f1f1f1;
+	padding: 60px 0 80px 0;
+
+	& .indexCollection__seciton {
+		margin-bottom: 40px;
+	}
+}
+
+
+
+@media (max-width: 992px) {
+	.indexCollection__seciton {
+		font-size: 20px;
+	}
+	.indexCollection {
+		margin-bottom: 20px;
+	}
+}
+@media (min-width: 992px) {
+	.indexCollection__nav, .indexCollection2__nav, .indexCollection3__nav, .indexNews__nav {
+		width:970px
+	}
+}
+
+@media (min-width: 1200px) {
+	.indexCollection__nav, .indexCollection2__nav, .indexCollection3__nav, .indexNews__nav {
+		width:1170px;
+	}
+
+
+}
+
+@media (max-width: 1345px) {
+	.indexCollection__nav, .indexCollection2__nav, .indexCollection3__nav, .indexNews__nav {
+
+		& .owl-prev, & .owl-next {
+			position: absolute;
+			top: -50px;
+			transform: inherit;
+			color: #252320;
+			font-size: 30px;
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+
+			border-radius: 50%;
+			display: inline-block;
+			cursor: pointer;
+			z-index: 5;
+			&:active {
+				color: #df1e21;
+			}
+
+			background: #f1f1f1;
+		}
+
+		& .owl-prev {
+			right: 60px;
+			padding-right: 3px;
+
+			& .arrow-slider-mobile-left {
+				&:before {
+					content: '\f104';
+					display: block;
+					font-size: 20px;
+					font-family: FontAwesome;
+				}
+			}
+		}
+
+		& .owl-next {
+			right: 15px;
+			padding-left: 3px;
+
+			& .arrow-slider-mobile-right {
+				&:before {
+					content: '\f105';
+					display: block;
+					font-size: 20px;
+					font-family: FontAwesome;
+				}
+			}
+		}
+
+		& .owl-prev  .icon-collection {
+
+			&:hover {
+				background-position: -267px 0;
+				transform: rotate(180deg);
+			}
+		}
+
+		& .owl-next .icon-collection {
+			transform: rotate(180deg);
+
+			&:hover {
+				background-position: -267px 0;
+				transform: rotate(0deg);
+			}
+		}
+	}
+
+	.indexCollection2__nav {
+		& .owl-prev, & .owl-next {
+			background: #bfbfbf;
+		}
+	}
+}
+
+@media (min-width: 1345px) {
+
+	.indexCollection__nav, .indexCollection2__nav, .indexCollection3__nav, .indexNews__nav {
+
+		& .owl-prev, & .owl-next {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #cbc9c5;
+			font-size: 70px;
+			display: inline-block;
+			cursor: pointer;
+			z-index: 5;
+
+			&:active {
+				color: #df1e21;
+			}
+		}
+
+		& .owl-prev {
+			left: -4%;
+		}
+
+		& .owl-next {
+			right: -4%;
+		}
+
+		& .owl-prev  .icon-collection {
+
+			&:hover {
+				background-position: -780px 0;
+				transform: rotate(180deg);
+			}
+		}
+
+		& .owl-next .icon-collection {
+			transform: rotate(180deg);
+
+			&:hover {
+				background-position: -780px 0;
+				transform: rotate(0deg);
+			}
+		}
+	}
+
+	& .owl-dot {
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		background: #4b4b4b;
+		margin-right: 9px;
+		border-radius: 50%;
+		cursor: pointer;
+
+		&.active {
+			background: #ffffff;
+		}
+	}
+}

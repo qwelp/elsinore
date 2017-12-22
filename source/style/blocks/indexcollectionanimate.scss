@@ -1,0 +1,19 @@
+@media (min-width: 1000px) {
+	.animate__item {
+		position: relative;
+	}
+
+	.animate__img {
+		position: relative;
+		top: -380px;
+		//transition: top .5s;
+		transition-property: top;
+		transition-duration: 1s;
+		transition-timing-function: ease-in-out;
+		z-index: -1;
+	}
+
+	.animate__img.active {
+		top: 0;
+	}
+}

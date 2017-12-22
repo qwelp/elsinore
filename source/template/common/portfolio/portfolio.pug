@@ -1,0 +1,9 @@
+.portfolio
+	.container
+		.portfolio__items
+			each item in [1,2,3,4,5,6,7,8,9]
+				.portfolio__item
+					.portfolio__item-wrap(style=`background-image: url(/assets/img/index/collection/${item}.png);`)
+						.portfolio__item-detail
+							a.portfolio__item-link(href="#") Подробнее
+					.portfolio__item-title Коллекция 2

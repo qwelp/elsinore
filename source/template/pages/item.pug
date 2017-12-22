@@ -1,0 +1,52 @@
+extends ../_template
+
+block variables
+	- var title = 'Item'
+
+block content
+	include ../common/_breadcrumb
+	section.catalogItem
+		.container
+			.catalogItemInfo
+				.catalogItemPanel
+					.catalogItemPanel__wrap
+						.catalogItemPanel__col
+							h1.catalogItemPanel__title Эльсинор 8 диван угловой
+							.catalogItemPanel__text Вышел в свет новый диван "Брук".Это самый мягкий диван в линейке среднеценового сегмента. Уклон спинки 120 градусов и высокие мягкие подушки обеспечивают непревзойденный комфорт посадки в своем классе. Вышел в свет новый диван "Брук".
+						.catalogItemPanel__col
+							ul.catalogItemPanel__items
+								li.catalogItemPanel__item
+									a.catalogItemPanel__link(data-toggle="open" href="#calc_item") Рассчитать
+								li.catalogItemPanel__item
+									a.catalogItemPanel__link(data-toggle="open" href="#property") Характеристики
+								li.catalogItemPanel__item
+									a.catalogItemPanel__link(data-toggle="open" href="#box_size") Габаритные размеры
+								li.catalogItemPanel__item
+									a.catalogItemPanel__link(data-toggle="open" href="#foto") Фотографии
+				#box_size.catalogItemPanelCollapse Габаритные размеры
+				#property.catalogItemPanelCollapse Характеристики
+				#calc_item.catalogItemPanelCollapse Рассчитать
+				#foto.catalogItemPanelCollapse
+					.catalogItemInfoFoto.clearfix
+						each item in [1,2,3,4]
+							.catalogItemInfoFoto__item
+								a.catalogItemInfoFoto__link(href=`/assets/img/index/collection/${item}.png`, data-fancybox-group="catalogItemInfoFoto__link", style=`background-image: url(/assets/img/index/collection/${item}.png);`)
+	section.galleryItem
+		.container
+			h2.galleryItem__title Галерея
+			.galleryItem__items.clearfix
+				each item in [1,2,3,4,5]
+					.galleryItem__item
+						a.galleryItem__link(href="#", style=`background-image: url(/assets/img/index/collection/${item}.png);`)
+	section.catalogGalleryItem
+		.container
+			h2.catalogGalleryItem__title Модели других коллекци
+			.catalogGalleryItem__items.clearfix
+				each item in [1,2,3,4,5,6]
+					.catalogGalleryItem__item
+						.catalogGalleryItem__link
+							.catalogGalleryItemMore
+								a.catalogGalleryItemMore__link(href="#") Подробнее
+							.catalogGalleryItem__link-title Эльсинор 8 диван угловой
+							img.catalogGalleryItem__img(src=`/assets/img/index/collection/${item}.png`, alt="")
+

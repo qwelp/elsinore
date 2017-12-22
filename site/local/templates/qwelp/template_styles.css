@@ -1,0 +1,38 @@
+#js-horMenu [id^='bx_incl_area'] {
+	display: inline-block;
+	margin-bottom: -6px;
+}
+#js-horMenu [id^='bx_incl_area'] [id^='bx_incl_area'] {
+	display: none;
+}
+
+.subscribe__input {
+	position: relative;
+}
+
+.subscribe__ok, .subscribe__error {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	color: #4cae4c;
+	background: #FFFFFF;
+	z-index: 10;
+}
+
+.subscribe__ok-text, .subscribe__error-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.cooperationForm {
+	margin-bottom: 0 !important;
+	margin-left: 0 !important;
+}
+
+a:focus {
+	outline: none;
+}

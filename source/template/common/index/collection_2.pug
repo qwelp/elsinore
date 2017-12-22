@@ -1,0 +1,12 @@
+section.indexCollection.indexCollection__odd#collectionTwo
+	.container.pr
+		h2.indexCollection__seciton Коллекция MODERN
+	.container.pr
+		.indexCollection2__nav.owl-nav
+		.indexCollection2__items.owl-carousel.owl-theme
+			each item in [4,5,6]
+				.indexCollection__item.animate__item
+					.indexCollection__detail
+						a.indexCollection__detail_link(href="#") Подробнее
+					.indexCollection__title Эльсинор 8 диван угловой
+					img.indexCollection__img.animate__img(src=`/assets/img/index/collection/${item}.png`, alt="")

@@ -16,51 +16,147 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.icon-arrow-right-coop {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 10px;
+  height: 19px;
+}
+.icon-arrow-slider-hover {
+  background-image: url(sprite.png);
+  background-position: -964px 0px;
+  width: 22px;
+  height: 41px;
+}
+.icon-arrow-slider-left {
+  background-image: url(sprite.png);
+  background-position: -872px 0px;
+  width: 22px;
+  height: 41px;
+}
+.icon-calc {
+  background-image: url(sprite.png);
+  background-position: -1056px 0px;
+  width: 25px;
+  height: 25px;
+}
+.icon-check {
+  background-image: url(sprite.png);
+  background-position: -1454px 0px;
+  width: 44px;
+  height: 44px;
+}
+.icon-collection {
+  background-image: url(sprite.png);
+  background-position: -688px 0px;
+  width: 22px;
+  height: 41px;
+}
+.icon-collection_h {
+  background-image: url(sprite.png);
+  background-position: -780px 0px;
+  width: 22px;
+  height: 41px;
+}
+.icon-images {
+  background-image: url(sprite.png);
+  background-position: -1800px 0px;
+  width: 49px;
+  height: 42px;
+}
+.icon-mail-send {
+  background-image: url(sprite.png);
+  background-position: -2292px 0px;
+  width: 74px;
+  height: 35px;
+}
 .icon-mastercard {
   background-image: url(sprite.png);
-  background-position: -364px 0px;
+  background-position: -1248px 0px;
   width: 32px;
   height: 19px;
 }
+.icon-money {
+  background-image: url(sprite.png);
+  background-position: -1568px 0px;
+  width: 45px;
+  height: 56px;
+}
+.icon-nav-arrow-act {
+  background-image: url(sprite.png);
+  background-position: -162px 0px;
+  width: 12px;
+  height: 21px;
+}
+.icon-nav-arrow {
+  background-image: url(sprite.png);
+  background-position: -80px 0px;
+  width: 12px;
+  height: 21px;
+}
+.icon-personal {
+  background-image: url(sprite.png);
+  background-position: -2043px 0px;
+  width: 54px;
+  height: 52px;
+}
+.icon-phones {
+  background-image: url(sprite.png);
+  background-position: -244px 0px;
+  width: 17px;
+  height: 17px;
+}
+.icon-plus {
+  background-image: url(sprite.png);
+  background-position: -598px 0px;
+  width: 20px;
+  height: 20px;
+}
 .icon-qiwi {
   background-image: url(sprite.png);
-  background-position: -88px 0px;
+  background-position: -419px 0px;
   width: 19px;
   height: 20px;
 }
+.icon-sotr {
+  background-image: url(sprite.png);
+  background-position: -1919px 0px;
+  width: 54px;
+  height: 54px;
+}
 .icon-subscribe-btn {
   background-image: url(sprite.png);
-  background-position: -267px 0px;
+  background-position: -1151px 0px;
   width: 27px;
   height: 13px;
 }
 .icon-subscribe {
   background-image: url(sprite.png);
-  background-position: -687px 0px;
+  background-position: -2167px 0px;
   width: 55px;
   height: 46px;
 }
 .icon-visa {
   background-image: url(sprite.png);
-  background-position: -570px 0px;
+  background-position: -1683px 0px;
   width: 47px;
   height: 15px;
 }
 .icon-vk {
   background-image: url(sprite.png);
-  background-position: -466px 0px;
+  background-position: -1350px 0px;
   width: 34px;
   height: 33px;
 }
 .icon-webmoney {
   background-image: url(sprite.png);
-  background-position: -177px 0px;
+  background-position: -508px 0px;
   width: 20px;
   height: 20px;
 }
 .icon-yandex-money {
   background-image: url(sprite.png);
-  background-position: 0px 0px;
+  background-position: -331px 0px;
   width: 18px;
   height: 20px;
 }

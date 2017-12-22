@@ -1,0 +1,20 @@
+extends ../_template
+
+block variables
+	- var title = 'Novosti'
+
+block content
+	include ../common/index/slider
+	.container
+		h1.news__name Все новости
+		.news
+			ul.news__items.clearfix
+				each item in [1,2,3,4,5,6]
+					li.news__item(style=`background-image: url(/assets/img/index/collection/${item}.png);`)
+						.news__preview
+							.news__date 21 Апреля, 2017
+							.news__title Специальное предложение
+							.news__text Вышел в свет новый диван "Брук". Это самый мягкий диван в линейке среднеценового сегмента. Уклон спинки 120 градусов и высокие мягкие подушки обеспечивают непревзойденный.
+							a.news__link(href="#") Подробнее
+		.text-center
+			include ../common/pag

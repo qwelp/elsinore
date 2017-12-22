@@ -1,0 +1,191 @@
+.cooperation__bg {
+	height: 549px;
+	background-image: url("/assets/img/cooperation.png");
+	margin-bottom: 52px;
+}
+
+.cooperation__section {
+	font-family: 'old_standard_ttbold';
+	font-size: 50px;
+	color: #000000;
+	margin-bottom: 50px;
+}
+
+.cooperation__text {
+	color: #464646;
+	font-size: 16px;
+	margin-bottom: 62px;
+	& p {
+		margin-bottom: 30px;
+	}
+}
+
+.cooperation__title {
+	font-family: 'old_standard_ttbold';
+	font-size: 35px;
+	color: #000000;
+	margin-bottom: 45px;
+}
+
+.cooperation__title-sub {
+	font-size: 40px;
+	margin-bottom: 50px;
+}
+
+.cooperation__items {
+	list-style-type: none;
+	margin: -6px 35px 55px 0;
+	padding: 0;
+}
+
+.cooperation__item {
+	display: table;
+	width: 100%;
+	margin-top: 6px;
+}
+
+.cooperation__item-number, .cooperation__item-text {
+	display: table-cell;
+	vertical-align: middle;
+	background: #f1f1f1;
+	padding-top: 16px;
+	padding-bottom: 10px;
+}
+
+.cooperation__item-number {
+	font-family: 'old_standard_ttbold';
+	color: #df1e21;
+	font-size: 62px;
+	width: 85px;
+	text-align: center;
+}
+
+.cooperation__item-text {
+	font-size: 16px;
+	color: #464646;
+	padding-right: 20px;
+}
+
+.cooperationInfo {
+	list-style-type: none;
+	margin: -20px 0 140px -1%;
+	padding: 0;
+}
+
+.cooperationInfo__item {
+	margin-top: 20px;
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	margin-left: 1%;
+}
+
+.cooperationInfo__item-icon {
+	height: 96px;
+	display: table-cell;
+	vertical-align: middle;
+
+	& div {
+		display: inline-block;
+	}
+}
+
+.cooperationInfo__item-text {
+
+}
+
+.cooperationForm {
+	margin-bottom: 25px;
+	margin-left: 20px;
+}
+
+
+
+
+@media(max-width:1200px){
+	.cooperation__section, .cooperation__title, .cooperation__title-sub, .cooperation__text {
+		margin-bottom: 25px;
+	}
+
+	.cooperationForm {
+		margin-left: 0;
+	}
+
+	.cooperation__items {
+		margin-right: 0;
+	}
+
+	.cooperationControl {
+		margin-bottom: 25px;
+	}
+
+	.cooperationInfo {
+		margin: -20px 0 25px -1%;
+
+	}
+}
+
+@media(max-width:768px){
+	.cooperationInfo__item {
+		width: 48%;
+		margin-left: 1%;
+	}
+}
+
+@media(max-width:600px){
+	.cooperation__section, .cooperation__title, .cooperation__title-sub {
+		font-size: 30px;
+	}
+
+	.cooperationInfo {
+		margin: -20px 0 25px 0%;
+	}
+	.cooperationInfo__item {
+		width: 100%;
+		margin-left: 0;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.cooperationInfo__item-icon {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	.cooperationControl {
+		margin: 0 0 25px 0;
+	}
+	.cooperation__bg {
+		height:250px;
+		background-position: center;
+		background-size: cover;
+		margin-bottom: 25px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

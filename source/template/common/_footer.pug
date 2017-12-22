@@ -31,8 +31,8 @@ footer.footer
 								each item in subscribeSmo
 									li.subscribeSmo__item
 										a.subscribeSmo__link(href="#")
-											div(class=`icon-${item.icon}`)
-
+											div.subscribeSmo__img(class=`icon-${item.icon}`)
+											.logo__text=item.icon
 		.footer__wrap
 			.container
 				.row
@@ -41,7 +41,9 @@ footer.footer
 						ul.footerSmo.clearfix
 							each item in footerSmo
 								li.footerSmo__item
+									a.footerSmo__link(href="#")
 									.footerSmo__img(class=`icon-${item.icon}`)
+									.logo__text=item.icon
 						.footer__info Информация на сайте не является публичной офертой
 					.col-md-2
 						ul.footerMenu
@@ -60,5 +62,5 @@ footer.footer
 									a.footerMenu__link(href=`${item.link}`)=item.title
 					.col-md-2
 						.footerContact
-							.footerContact__phone +7 (861) 278-87-87
-							a.footerContact__callback(href="#") Получить консультацию
+							.footerContact__phone +7 (861) 278-87-88
+							a.footerContact__callback(href="#" data-toggle="modal" data-target="#callback") Получить консультацию

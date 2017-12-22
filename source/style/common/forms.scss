@@ -1,0 +1,114 @@
+.commonForm {
+	background: #f1f1f1;
+	padding: 50px 40px;
+}
+
+.commonForm__form {
+
+}
+
+.commonForm__title {
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 38px;
+}
+
+.commonForm__row {
+	margin-bottom: 22px;
+}
+
+.commonForm__input {
+	background: #FFFFFF;
+	padding: 12px 15px;
+}
+
+.commonForm__input-text {
+	border: 0;
+	width: 100%;
+	font-size: 15px;
+	line-height: 16px;
+	color: #737373;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.commonForm__policy {
+
+}
+
+
+.commonForm__label {
+	font-weight: normal;
+}
+
+.commonForm__tb {
+	display: table;
+}
+
+.commonForm__col {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.commonForm__policy {
+	color: #737373;
+	padding-bottom: 8px;
+}
+
+.commonForm__policy-link {
+	color: #737373;
+	border-bottom: 1px solid #737373;
+	font-size: 14px;
+	&:hover {
+		text-decoration: none;
+		color: #737373;
+	}
+}
+
+.commonForm__submit {
+	font-family: 'proxima_nova_rgregular';
+	font-size: 18px;
+	color: #ffffff;
+	background: #000000;
+	border: 0;
+	width: 100%;
+	padding: 15px 0;
+}
+
+
+.commonForm__input-checkbox {
+	display: none;
+}
+
+.commonForm__input-checkbox-custom {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: #FFFFFF;
+	border-radius: 3px;
+}
+.commonForm__input-checkbox-custom,
+.commonForm__input-label {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.commonForm__input-label {
+	margin-left: 15px;
+}
+.commonForm__input-checkbox:checked + .commonForm__input-checkbox-custom::before {
+	font-family: FontAwesome;
+	content: "\f00c";
+	line-height: 17px;
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	color: #000000;
+	border-radius: 2px;
+}
