@@ -1,0 +1,62 @@
+#map {
+	height: 549px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+
+.map__hint {
+	padding: 20px;
+	min-height: 55px;
+	min-width: 195px;
+	font-size: 20px;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #f9b43b;
+	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+	border-radius: 20px;
+}
+
+.map__balloon {
+	padding: 10px;
+	font-size: 14px;
+	color: #333333;
+}
+
+.map__balloon a {
+	color: #dc1f3b;
+}
+
+.map__burger-img {
+	float: right;
+	height: 100px;
+	width: 100px;
+}
+
+.shops__items {
+	margin-top: 40px;
+	margin-bottom: 45px;
+}
+
+.shops__item {
+	margin-bottom: 20px;
+}
+
+.shops__img {
+	width: 120px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.shops__link {
+	color: #000000;
+}
+
+
+
+
+
+
+
+
+

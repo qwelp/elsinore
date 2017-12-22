@@ -4,6 +4,17 @@ body, html {
 	font-family: 'proxima_nova_rgregular';
 	font-size: 15px;
 	color: #737373;
+	min-width: 320px;
+}
+
+h1, h2 {
+	color: #191919;
+	font-size: 45px;
+	font-family: 'old_standard_ttbold';
+}
+
+h2 {
+	font-size: 36px;
 }
 
 .wrapper {
@@ -27,4 +38,25 @@ body, html {
 
 .footer__wrap {
 	padding: 55px 0 85px;
+}
+
+.pr {
+	position: relative;
+}
+
+.modal-dialog-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.modal-footer {
+	margin-top: 0;
+}
+
+@media (max-width: 767px) {
+	.modal-dialog-center {
+		width: 100%;
+	}
 }

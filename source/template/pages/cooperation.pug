@@ -1,0 +1,91 @@
+extends ../_template
+
+block variables
+	- var title = 'cooperation'
+
+block content
+	include ../common/_breadcrumb
+	section.cooperation
+		.container
+			.cooperation__section Сотрудничество
+		.container-fluid.cooperation__bg
+		.container
+			.row
+				.col-lg-7
+					.cooperation__text
+						p Мы всегда рады сотрудничеству с частными дизайнерами, дизайн-студиями, декораторами и архитекторами, которые занимаются проектированием и оформлением квартир, домов, ресторанов или отелей.
+						p Мы ценим авторский подход к созданию интерьера и хотим, чтобы как можно больше красивых и функциональных проектов были воплощены в жизнь.
+						p Уже много лет наша мебель помогает дизайнерами реализовывать их идеи и радовать своих клиентов.
+					h2.cooperation__title Почему с нами выгодно сотрудничать?
+					ul.cooperation__items
+						li.cooperation__item
+							.cooperation__item-number 1
+							.cooperation__item-text Наш холдинг MZ5 group ведет свою историю с 1989 года, и является стабильным и надежным партнером для компаний из России, Германии, Италии, Польши, Бразилии и Китая.
+						li.cooperation__item
+							.cooperation__item-number 2
+							.cooperation__item-text Обширная сеть салонов делает процесс выбора и покупки мебели комфортным и доступным.
+						li.cooperation__item
+							.cooperation__item-number 3
+							.cooperation__item-text С нашей помощью, ты сможешь создать для Клиента индивидуальное решение выбрав стиль мебели, форму и комплектацию, материал, эксклюзивные опции, и даже цвет нити.
+						li.cooperation__item
+							.cooperation__item-number 4
+							.cooperation__item-text Все предоставленные тобой проекты будут опубликованы на нашем сайте и в социальных сетях. Лучшие проекты могут быть опубликованы в федеральных изданиях об интерьерном дизайне.
+						li.cooperation__item
+							.cooperation__item-number 5
+							.cooperation__item-text За совместное сотрудничество мы предлагаем выгодные финансовые условия и бонусы и для тебя и твоих клиентов.
+					h2.cooperation__title.cooperation__title-sub Шаги сотрудничесва
+					ul.cooperationInfo.clearfix
+						li.cooperationInfo__item
+							.cooperationInfo__item-icon
+								.icon-mail-send
+							.cooperationInfo__item-text Отправить заявку на сотрудничество
+						li.cooperationInfo__item
+							.cooperationInfo__item-icon
+								.icon-personal
+							.cooperationInfo__item-text Получить приглашение на персональную консультацию
+						li.cooperationInfo__item
+							.cooperationInfo__item-icon
+								.icon-sotr
+							.cooperationInfo__item-text Заключить соглашения о сотрудничестве
+						li.cooperationInfo__item
+							.cooperationInfo__item-icon
+								.icon-check
+							.cooperationInfo__item-text Оформить заказ в нашем салоне
+						li.cooperationInfo__item
+							.cooperationInfo__item-icon
+								.icon-money
+							.cooperationInfo__item-text Получить бонус
+						li.cooperationInfo__item
+							.cooperationInfo__item-icon
+								.icon-images
+							.cooperationInfo__item-text Разместить фотографии готового проекта на сайте ( по желанию)
+				.col-lg-5
+					.cooperationForm.commonForm
+						form.commonForm__form(action="")
+							.cooperationForm__title.commonForm__title ОСТАВЬ ЗАЯВКУ НА СОТРУДНИЧЕСТВО
+							.cooperationForm__row.commonForm__row
+								.cooperationForm__input.commonForm__input
+									input.cooperationForm__input-text.commonForm__input-text(name="" type="text" placeholder="Имя")
+							.cooperationForm__row.commonForm__row
+								.cooperationForm__input.commonForm__input
+									input.cooperationForm__input-text.commonForm__input-text(name="" type="text" placeholder="Телефон")
+							.cooperationForm__row.commonForm__row
+								.cooperationForm__input.commonForm__input
+									input.cooperationForm__input-text.commonForm__input-text(name="" type="text" placeholder="E-mail")
+							.cooperationForm__row.commonForm__row
+								.cooperationForm__input.commonForm__input
+									input.cooperationForm__input-text.commonForm__input-text(name="" type="text" placeholder="Город")
+							.cooperationForm__row.commonForm__row
+								.commonForm__policy
+									label.commonForm__label
+										.commonForm__tb
+											.commonForm__col
+												input.commonForm__input-checkbox(type='checkbox', name='')
+												span.commonForm__input-checkbox-custom
+											.commonForm__col
+												span.commonForm__input-label
+													| Я согласен на
+													|
+													a.commonForm__policy-link(href="#") обработку персональных данных
+							.cooperationForm__row.commonForm__row
+								input.cooperationForm__btn.commonForm__submit(type='submit', value="Отправить")

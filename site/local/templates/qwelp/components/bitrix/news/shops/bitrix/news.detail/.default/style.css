@@ -1,0 +1,49 @@
+#map {
+	height: 549px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.map__balloon {
+	padding: 10px;
+	font-size: 14px;
+	color: #333333;
+}
+
+.map__balloon a {
+	color: #dc1f3b;
+}
+
+.shop {
+	margin-top: 40px;
+	margin-bottom: 65px;
+}
+
+.shop__items {
+	list-style-type: none;
+	padding: 0;
+}
+
+.shop__item {
+	margin-bottom: 15px;
+	color: #000000;
+	font-size: 16px;
+}
+
+.shop__item_label {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.shop__detailText {
+	margin-bottom: 20px;
+}
+
+.shop__img {
+
+}
+
+.shop__img_picture {
+	max-width: 240px;
+	height: auto;
+}

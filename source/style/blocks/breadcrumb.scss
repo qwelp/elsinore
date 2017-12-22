@@ -1,0 +1,17 @@
+.breadcrumb {
+	background: none;
+	margin-top: 22px;
+	padding-left: 0;
+}
+
+.breadcrumb__item {
+	&.active {
+		color: #000000;
+	}
+}
+
+.breadcrumb__link {
+	color: #aaaaaa;
+	font-size: 15px;
+	font-family: 'proxima_nova_rgregular';
+}
