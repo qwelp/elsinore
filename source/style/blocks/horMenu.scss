@@ -1,0 +1,57 @@
+.horMenu {
+	position: relative;
+	margin-top: 22px;
+	margin-left: -15px;
+}
+
+.horMenu__item {
+	margin-left: 15px;
+}
+
+.nav.navbar-nav.horMenu .horMenu__link {
+	color: #c7c7c7;
+	font-size: 16px;
+	&:hover {
+		color: #fff;
+	}
+}
+
+@media (min-width: 1240px) {
+	.horMenu {
+		margin-top: 0;
+	}
+
+	.horMenu__item {
+		padding: 0 !important;
+	}
+	.horMenu__link {
+		height: 81px !important;
+		line-height: 66px !important;
+	}
+
+	.nav .q_navbar-menu-dropdown {
+		left: -50px;
+		border: 0;
+		border-radius: 0;
+		padding-top: 0;
+
+		&:before {
+			position: relative;
+			top: -5px;
+			left: 50%;
+			transform: translateX(-50%) rotate(45deg);
+			content: "";
+			width: 10px;
+			height: 10px;
+			display: block;
+			background: #fff;
+		}
+
+		a {
+			&:hover {
+				color: #ec2023;
+				background: #ffffff;
+			}
+		}
+	}
+}

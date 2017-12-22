@@ -1,0 +1,32 @@
+header.header
+	.container
+		nav.navbar.navbar-default(role='navigation')
+			.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='#js-horMenu')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand.logo(href='/')
+					img.logo__img(src='/assets/img/logo.png' alt='Эльсинор группа фабрик')
+					.logo__text Эльсинор группа фабрик
+			#js-horMenu.collapse.navbar-collapse
+				ul.nav.navbar-nav.horMenu
+					each item, i in horMenu
+						if (i == 1)
+							li.dropdown.horMenu__item
+								a.dropdown-toggle.horMenu__link(href='#', data-toggle='dropdown')=item.title
+									b.caret
+								ul.dropdown-menu.q_navbar-menu-dropdown
+									li
+										a(href='#') Коллекция CLASSIC
+									li
+										a(href='#') Коллекция MODERN
+									li
+										a(href='#') Коллекция LIFE
+						else
+							li.horMenu__item
+								a.horMenu__link(href=`${item.link}`)=item.title
+				.headerContact.navbar-right
+					.headerContact__phone +7 (861) 278-87-87
+					a.headerContact__callback(href='#') Получить консультацию

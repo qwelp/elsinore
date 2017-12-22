@@ -1,0 +1,64 @@
+footer.footer
+	.footer__layer
+		.subscribe
+			.container
+				.row
+					.col-lg-3.col-md-12.col-xs-12
+						.subscribe__wrap.clearfix
+							.icon-subscribe
+							.subscribe__decription Подписывайтесь на новости и акции
+					.col-lg-7.col-md-12.col-xs-12
+						.subscribe__form.clearfix
+							form(action="")
+								.subscribe__table
+									.subscribe__tr
+										.subscribe__td
+											.subscribe__input
+												input.subscribe__input_text(type="text" placeholder="Оставьте свой e-mail")
+										.subscribe__td
+											a.subscribe_btn(href="#")
+												.subscribe_btn__table
+													.subscribe_btn__row
+														.subscribe_btn__td
+															.subscribe_btn__title Подписаться
+														.subscribe_btn__td
+															.subscribe_btn__icon
+																.icon-subscribe-btn
+					.col-lg-2.col-sm-12.col-xs-12
+						.subscribeSmo
+							.subscribeSmo__title Мы в контакте:
+							ul.subscribeSmo__items.clearfix
+								each item in subscribeSmo
+									li.subscribeSmo__item
+										a.subscribeSmo__link(href="#")
+											div(class=`icon-${item.icon}`)
+
+		.footer__wrap
+			.container
+				.row
+					.col-md-3
+						.footer__copyright © Эльсинор, 2017
+						ul.footerSmo.clearfix
+							each item in footerSmo
+								li.footerSmo__item
+									.footerSmo__img(class=`icon-${item.icon}`)
+						.footer__info Информация на сайте не является публичной офертой
+					.col-md-2
+						ul.footerMenu
+							each item in footerMenu1
+								li.footerMenu__item
+									a.footerMenu__link(href=`${item.link}`)=item.title
+					.col-md-2
+						ul.footerMenu
+							each item in footerMenu2
+								li.footerMenu__item
+									a.footerMenu__link(href=`${item.link}`)=item.title
+					.col-md-3
+						ul.footerMenu
+							each item in footerMenu3
+								li.footerMenu__item
+									a.footerMenu__link(href=`${item.link}`)=item.title
+					.col-md-2
+						.footerContact
+							.footerContact__phone +7 (861) 278-87-87
+							a.footerContact__callback(href="#") Получить консультацию
