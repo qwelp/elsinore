@@ -31,6 +31,17 @@ class AfterElementAdd
 			);
 			CEvent::Send("QWELP_COOPERATION", SITE_ID, $arEventFields);
 		}
+
+		if($arFields["IBLOCK_ID"] == 14)
+		{
+			$arEventFields = array(
+				"NAME"         => $arFields["NAME"],
+				"PHONE"        => $arFields["PROPERTY_VALUES"]["31"],
+				"EMAIL"        => $arFields["PROPERTY_VALUES"]["32"],
+				"CITY"         => $arFields["PROPERTY_VALUES"]["33"]
+			);
+			CEvent::Send("QWELP_PRODUCT_ORDER", SITE_ID, $arEventFields);
+		}
 	}
 }
 ?>

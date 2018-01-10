@@ -26,7 +26,7 @@ $this->setFrameMode(true);
 					</div>
 					<div class="catalogItemPanel__col">
 						<ul class="catalogItemPanel__items">
-							<li class="catalogItemPanel__item"><a class="catalogItemPanel__link" data-toggle="open" href="#calc_item">Рассчитать</a></li>
+							<li class="catalogItemPanel__item"><a class="catalogItemPanel__link" <a href="#" class="headerContact__callback" data-toggle="modal" data-target="#order_product">Рассчитать</a></li>
 							<li class="catalogItemPanel__item"><a class="catalogItemPanel__link" data-toggle="open" href="#property">Характеристики</a></li>
 							<li class="catalogItemPanel__item"><a class="catalogItemPanel__link" data-toggle="open" href="#box_size">Габаритные размеры</a></li>
 							<li class="catalogItemPanel__item"><a class="catalogItemPanel__link" data-toggle="open" href="#foto">Фотографии</a></li>
@@ -54,8 +54,8 @@ $this->setFrameMode(true);
 		<h2 class="galleryItem__title">Галерея</h2>
 		<div class="galleryItem__items clearfix">
 			<?foreach ($arResult['GALLEREY'] as $k => $arFoto):?>
-			<div class="galleryItem__item">
-				<a class="galleryItem__link" data-fancybox-group="galleryItem__link" href="<?=$arResult['GALLEREY_BIG'][$k]['src']?>" style="background-image: url(<?=$arFoto['src']?>);"></a>
+			<div class="galleryItem__item" style="background-image: url(<?=$arFoto['src']?>);">
+				<a class="galleryItem__link" data-fancybox-group="galleryItem__link" href="<?=$arResult['GALLEREY_BIG'][$k]['src']?>"></a>
 			</div>
 			<?endforeach;?>
 		</div>
@@ -66,18 +66,16 @@ $this->setFrameMode(true);
 		<h2 class="catalogGalleryItem__title">Модели других коллекций</h2>
 		<div class="catalogGalleryItem__items clearfix">
 			<?foreach ($arResult['PRODUCT_ITEMS'] as $k => $arItem):?>
-			<div class="catalogGalleryItem__item">
+			<div class="catalogGalleryItem__item" style="background-image: url(<?=$arItem['IMG']['src']?>);">
+				<a class="linkList" href="<?= $arItem['DETAIL_PAGE_URL'] ?>"></a>
 				<div class="catalogGalleryItem__link">
-					<div class="catalogGalleryItemMore"><a class="catalogGalleryItemMore__link" href="<?=$arItem['DETAIL_PAGE_URL']?>">Подробнее</a></div>
+					<a class="catalogGalleryItemMore" href="<?=$arItem['DETAIL_PAGE_URL']?>">
+						<span class="catalogGalleryItemMore__link">Подробнее</span>
+					</a>
 					<div class="catalogGalleryItem__link-title"><?=$arItem['NAME']?></div>
-					<img class="catalogGalleryItem__img" src="<?=$arItem['IMG']['src']?>" alt="<?=$arItem['NAME']?>">
 				</div>
 			</div>
 			<?endforeach;?>
 		</div>
 	</div>
 </section>
-
-<?
-//dump($arResult);
-?>

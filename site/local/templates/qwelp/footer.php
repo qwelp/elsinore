@@ -239,20 +239,20 @@ Loc::loadMessages(__FILE__);
 <ul class="cooperationControl hideLayer">
 	<li class="cooperationControl__item">
 		<div class="cooperationControl__col"><span class="cooperationControl__icon icon-calc"></span></div>
-		<div class="cooperationControl__col"><a class="cooperationControl__link" href="#">Узнать стоимость</a></div>
+		<div class="cooperationControl__col"><a data-toggle="modal" data-target="#callback" class="cooperationControl__link" href="#">Узнать стоимость</a></div>
 	</li>
 	<li class="cooperationControl__item">
 		<div class="cooperationControl__col"><span class="cooperationControl__icon icon-phones"></span></div>
-		<div class="cooperationControl__col"><a class="cooperationControl__link" href="#">ЗАКАЗАТЬ ЗВОНОК</a></div>
+		<div class="cooperationControl__col"><a data-toggle="modal" data-target="#callback" class="cooperationControl__link" href="#">ЗАКАЗАТЬ ЗВОНОК</a></div>
 	</li>
 	<li class="cooperationControl__item">
 		<div class="cooperationControl__col"><span class="cooperationControl__icon icon-plus"></span></div>
-		<div class="cooperationControl__col"><a class="cooperationControl__link" href="#">Бонусная программа</a></div>
+		<div class="cooperationControl__col"><a class="cooperationControl__link" href="/cooperation/">Сотрудничество</a></div>
 	</li>
 	<li class="cooperationControl__item-last"><a class="cooperationControl__hide" id="js-cooperationControl" href="#">
 			<div class="cooperationControl__hide-wrap">
 				<div class="cooperationControl__hide-col">
-					<div class="cooperationControl__hide-text">Свернуть</div>
+					<div class="cooperationControl__hide-text">On-Line</div>
 				</div>
 				<div class="cooperationControl__hide-col">
 					<div class="icon-arrow-right-coop"></div>

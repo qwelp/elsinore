@@ -12,4 +12,7 @@ $(document).ready(function(){
 			}
 		});
 	});
+	$('.dropdown a.dropdown-toggle').click(function() {
+		location.href = $(this).attr('href');
+	});
 });

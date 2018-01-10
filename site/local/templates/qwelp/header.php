@@ -38,7 +38,7 @@ Loc::loadMessages(__FILE__);
 					</button>
 					<a class="navbar-brand logo" href="/">
 						<img class="logo__img" src="<?=SITE_TEMPLATE_PATH?>/img/logo.png" alt="Эльсинор группа фабрик">
-						<div class="logo__text">Эльсинор группа фабрик</div>
+						<span class="logo__text">Эльсинор группа фабрик</span>
 					</a>
 				</div>
 				<div class="collapse navbar-collapse" id="js-horMenu"><?$APPLICATION->IncludeComponent(

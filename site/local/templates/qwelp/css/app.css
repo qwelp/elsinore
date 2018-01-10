@@ -499,17 +499,23 @@ h2 {
 
 .galleryItem__item {
 	float: left;
-	width: 20%
+	width: 225px;
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	height: 245px;
+	margin-left: -5px;
 }
 
 .galleryItem__item:not(:first-child) {
-	padding-left: 5px
+	margin-left: 5px;
 }
 
 .galleryItem__link {
 	display: block;
 	width: 100%;
-	height: 245px;
+	height: 100%;
+	position: absolute;
 	background-position: center;
 	background-size: cover
 }
@@ -520,12 +526,20 @@ h2 {
 
 .catalogGalleryItem__item {
 	width: 33.33333%;
-	float: left
+	float: left;
+	background-size: cover;
+	background-position: center;
+	height: 366px;
+	position: relative;
 }
 
 .catalogGalleryItem__link {
 	display: block;
-	position: relative
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .catalogGalleryItem__link:hover .catalogGalleryItemMore, .newModel__item:hover .newModel__item-detail, .sections__item:hover .sections__item-detail {
@@ -546,6 +560,7 @@ h2 {
 }
 
 .catalogGalleryItemMore {
+	display: block;
 	opacity: 0;
 	transition: opacity .3s;
 	position: absolute;
@@ -726,6 +741,7 @@ h2 {
 }
 
 .newModel__item-detail {
+	display: block;
 	opacity: 0;
 	transition: opacity .3s;
 	position: absolute;
@@ -797,6 +813,7 @@ h2 {
 }
 
 .sections__item-detail {
+	display: block;
 	opacity: 0;
 	transition: opacity .3s;
 	position: absolute;
@@ -1288,9 +1305,17 @@ h2 {
 	position: relative
 }
 
+.indexCollection__item_bg {
+	background-position: center;
+	background-size: cover;
+	height: 366px;
+}
+
 .indexCollection__detail {
+	display: block;
 	opacity: 0;
 	position: absolute;
+	display: block;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1527,6 +1552,7 @@ h2 {
 }
 
 .indexNews__preview {
+	display: block;
 	position: absolute;
 	top: 314px;
 	left: 0;
@@ -1534,7 +1560,12 @@ h2 {
 	height: 100%;
 	padding: 30px;
 	background: rgba(0, 0, 0, .8);
-	transition: top .5s
+	transition: top .5s;
+	text-decoration: none !important;
+}
+
+.indexNews__preview * {
+	text-decoration: none !important;
 }
 
 .indexNews__date {
@@ -1902,7 +1933,7 @@ h2 {
 		position: relative
 	}
 
-	.animate__img {
+	.animate__item {
 		top: -380px;
 		transition-property: top;
 		transition-duration: 1s;
@@ -1910,7 +1941,7 @@ h2 {
 		z-index: -1
 	}
 
-	.animate__img.active {
+	.animate__item.active {
 		top: 0
 	}
 }
@@ -1919,7 +1950,8 @@ h2 {
 	display: block;
 	padding: 23px 28px;
 	background: #df1e21;
-	margin-right: 49px
+	margin-right: 49px;
+	height: 100%;
 }
 
 .navbar-brand.logo:hover {
@@ -2030,6 +2062,7 @@ h2 {
 }
 
 .nDetailItems__preview {
+	display: block;
 	position: absolute;
 	top: 304px;
 	left: 0;
@@ -2037,7 +2070,8 @@ h2 {
 	height: 100%;
 	padding: 30px;
 	background: rgba(0, 0, 0, .8);
-	transition: top .5s
+	transition: top .5s;
+	text-decoration: none !important;
 }
 
 .nDetailItems__date {
@@ -2299,6 +2333,7 @@ h2 {
 }
 
 .portfolio__item-detail {
+	display: block;
 	opacity: 0;
 	transition: opacity .3s;
 	position: absolute;
@@ -2325,6 +2360,15 @@ h2 {
 .portfolio__item-link:hover {
 	color: #fff;
 	text-decoration: none
+}
+
+.portfolio__item-wrap-link, .linkList {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
 }
 
 .portfolio__item-title {

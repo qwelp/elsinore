@@ -20,7 +20,10 @@ $this->setFrameMode(true);
 			$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
 			$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 			?><div class="newModel__item" style="background-image: url(<?=$arItem['DETAIL_PICTURE']['SRC']?>);">
-				<div class="newModel__item-detail"><a class="newModel__item-link" href="<?=$arItem['DETAIL_PAGE_URL']?>">Подробнее</a></div>
+				<a class="linkList" href="<?= $arItem['DETAIL_PAGE_URL'] ?>"></a>
+				<a class="newModel__item-detail" href="<?=$arItem['DETAIL_PAGE_URL']?>">
+					<span class="newModel__item-link">Подробнее</span>
+				</a>
 				<div class="newModel__item-title"><?=$arItem['NAME']?></div>
 			</div><?endforeach;?>
 		</div>

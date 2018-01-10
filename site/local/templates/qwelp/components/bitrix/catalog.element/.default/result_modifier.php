@@ -29,7 +29,7 @@ foreach ($arResult['PROPERTIES']['GALLEREY']['VALUE'] as $k => $foto) {
 
 	$arResult['GALLEREY'][] = CFile::ResizeImageGet(
 		$foto,
-		array('width'=>200, 'height' => 190),
+		array('width'=>500, 'height' => 500),
 		BX_RESIZE_IMAGE_PROPORTIONAL,
 		false
 	);

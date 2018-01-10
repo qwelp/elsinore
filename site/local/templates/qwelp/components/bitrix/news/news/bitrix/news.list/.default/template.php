@@ -19,12 +19,13 @@ $this->setFrameMode(true);
 			?>
 			<li id="<?= $this->GetEditAreaId($arItem['ID']); ?>" class="news__item"
 				style="background-image: url(<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>);">
-			<div class="news__preview">
-				<div class="news__date"><?= FormatDate("d F, Y", MakeTimeStamp($arItem["TIMESTAMP_X"])) ?></div>
-				<div class="news__title"><?= $arItem['NAME'] ?></div>
-				<div class="news__text"><?= $arItem['PREVIEW_TEXT'] ?></div>
-				<a class="news__link" href="<?= $arItem['DETAIL_PAGE_URL'] ?>">Подробнее</a>
-			</div>
+				<a class="linkList" href="<?= $arItem['DETAIL_PAGE_URL'] ?>"></a>
+				<div class="news__preview">
+					<div class="news__date"><?= FormatDate("d F, Y", MakeTimeStamp($arItem["TIMESTAMP_X"])) ?></div>
+					<div class="news__title"><?= $arItem['NAME'] ?></div>
+					<div class="news__text"><?= $arItem['PREVIEW_TEXT'] ?></div>
+					<a class="news__link" href="<?= $arItem['DETAIL_PAGE_URL'] ?>">Подробнее</a>
+				</div>
 			</li><? endforeach; ?>
 	</ul>
 </div>

@@ -17,7 +17,10 @@ $this->setFrameMode(true);
 		$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
 		?><div id="<?=$this->GetEditAreaId($arItem['ID']);?>" class="portfolio__item">
 			<div class="portfolio__item-wrap" style="background-image: url(<?=$arItem['PREVIEW_PICTURE']['SRC']?>);">
-				<div class="portfolio__item-detail"><a class="portfolio__item-link" href="<?= $arItem['DETAIL_PAGE_URL'] ?>">Подробнее</a></div>
+				<a class="portfolio__item-wrap-link" href="<?= $arItem['DETAIL_PAGE_URL'] ?>"></a>
+				<a  href="<?= $arItem['DETAIL_PAGE_URL'] ?>" class="portfolio__item-detail">
+					<span class="portfolio__item-link">Подробнее</span>
+				</a>
 			</div>
 			<div class="portfolio__item-title"><?= $arItem['NAME'] ?></div>
 		</div><? endforeach; ?>

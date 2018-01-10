@@ -67,60 +67,62 @@ $APPLICATION->IncludeComponent(
 			</div>
 			<div class="col-lg-5">
 				<?$APPLICATION->IncludeComponent(
-					"bitrix:iblock.element.add.form",
-					"cooperation",
-					array(
-						"CUSTOM_TITLE_DATE_ACTIVE_FROM" => "",
-						"CUSTOM_TITLE_DATE_ACTIVE_TO" => "",
-						"CUSTOM_TITLE_DETAIL_PICTURE" => "",
-						"CUSTOM_TITLE_DETAIL_TEXT" => "",
-						"CUSTOM_TITLE_IBLOCK_SECTION" => "",
-						"CUSTOM_TITLE_NAME" => "Имя",
-						"CUSTOM_TITLE_PREVIEW_PICTURE" => "",
-						"CUSTOM_TITLE_PREVIEW_TEXT" => "",
-						"CUSTOM_TITLE_TAGS" => "",
-						"DEFAULT_INPUT_SIZE" => "30",
-						"DETAIL_TEXT_USE_HTML_EDITOR" => "N",
-						"ELEMENT_ASSOC" => "CREATED_BY",
-						"AJAX_MODE" => "Y",
-						"AJAX_OPTION_SHADOW" => "Y", // затемнять область
-						"AJAX_OPTION_JUMP" => "Y", // скроллить страницу до компонента
-						"AJAX_OPTION_STYLE" => "N", // подключать стили
-						"AJAX_OPTION_HISTORY" => "N",
-						"GROUPS" => array(
-						),
-						"IBLOCK_ID" => "8",
-						"IBLOCK_TYPE" => "forms",
-						"LEVEL_LAST" => "Y",
-						"LIST_URL" => "",
-						"MAX_FILE_SIZE" => "0",
-						"MAX_LEVELS" => "100000",
-						"MAX_USER_ENTRIES" => "100000",
-						"PREVIEW_TEXT_USE_HTML_EDITOR" => "N",
-						"PROPERTY_CODES" => array(
-							0 => "23",
-							1 => "24",
-							2 => "25",
-							3 => "26",
-							4 => "NAME",
-						),
-						"PROPERTY_CODES_REQUIRED" => array(
-							0 => "23",
-							1 => "24",
-							2 => "25",
-							3 => "26",
-						),
-						"RESIZE_IMAGES" => "N",
-						"SEF_MODE" => "Y",
-						"STATUS" => "ANY",
-						"STATUS_NEW" => "N",
-						"USER_MESSAGE_ADD" => "Данные отправлены",
-						"USER_MESSAGE_EDIT" => "Данные отправлены",
-						"USE_CAPTCHA" => "N",
-						"COMPONENT_TEMPLATE" => "cooperation"
-					),
-					false
-				);?>
+	"bitrix:iblock.element.add.form", 
+	"cooperation", 
+	array(
+		"CUSTOM_TITLE_DATE_ACTIVE_FROM" => "",
+		"CUSTOM_TITLE_DATE_ACTIVE_TO" => "",
+		"CUSTOM_TITLE_DETAIL_PICTURE" => "",
+		"CUSTOM_TITLE_DETAIL_TEXT" => "",
+		"CUSTOM_TITLE_IBLOCK_SECTION" => "",
+		"CUSTOM_TITLE_NAME" => "Имя",
+		"CUSTOM_TITLE_PREVIEW_PICTURE" => "",
+		"CUSTOM_TITLE_PREVIEW_TEXT" => "",
+		"CUSTOM_TITLE_TAGS" => "",
+		"DEFAULT_INPUT_SIZE" => "30",
+		"DETAIL_TEXT_USE_HTML_EDITOR" => "N",
+		"ELEMENT_ASSOC" => "CREATED_BY",
+		"AJAX_MODE" => "Y",
+		"AJAX_OPTION_SHADOW" => "Y",
+		"AJAX_OPTION_JUMP" => "Y",
+		"AJAX_OPTION_STYLE" => "N",
+		"AJAX_OPTION_HISTORY" => "N",
+		"GROUPS" => array(
+			0 => "2",
+		),
+		"IBLOCK_ID" => "8",
+		"IBLOCK_TYPE" => "forms",
+		"LEVEL_LAST" => "Y",
+		"LIST_URL" => "",
+		"MAX_FILE_SIZE" => "0",
+		"MAX_LEVELS" => "100000",
+		"MAX_USER_ENTRIES" => "100000",
+		"PREVIEW_TEXT_USE_HTML_EDITOR" => "N",
+		"PROPERTY_CODES" => array(
+			0 => "23",
+			1 => "24",
+			2 => "25",
+			3 => "26",
+			4 => "NAME",
+		),
+		"PROPERTY_CODES_REQUIRED" => array(
+			0 => "23",
+			1 => "24",
+			2 => "25",
+			3 => "26",
+		),
+		"RESIZE_IMAGES" => "N",
+		"SEF_MODE" => "Y",
+		"STATUS" => "ANY",
+		"STATUS_NEW" => "N",
+		"USER_MESSAGE_ADD" => "Данные отправлены",
+		"USER_MESSAGE_EDIT" => "Данные отправлены",
+		"USE_CAPTCHA" => "N",
+		"COMPONENT_TEMPLATE" => "cooperation",
+		"SEF_FOLDER" => ""
+	),
+	false
+);?>
 			</div>
 		</div>
 	</div>
